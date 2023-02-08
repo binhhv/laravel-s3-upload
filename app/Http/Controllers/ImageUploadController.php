@@ -39,7 +39,7 @@ class ImageUploadController extends Controller
 
                 Storage::disk('s3')->put($filePath, file_get_contents($file));
 
-                return back()->with('success', 'Image Uploaded successfully');
+                return back()->with('success', 'Image aaaa Uploaded successfully');
             } catch (Exception $e) {
                 return back()->with('error', $e->getMessage());
             }
