@@ -36,7 +36,7 @@ class ImageUploadController extends Controller
             try {
                 $file = $request->file('image');
                 $name = time() . $file->getClientOriginalName();
-                $filePath = 'images/' . $name;
+                $filePath = $name;
                 Log::error($filePath);
                 Storage::disk('s3')->put($filePath, file_get_contents($file));
 
