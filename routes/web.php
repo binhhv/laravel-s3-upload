@@ -21,6 +21,3 @@ Route::get('/', function () {
 Route::get('image-upload', [ ImageUploadController::class, 'imageUpload' ])->name('image.upload');
 Route::post('image-upload', [ ImageUploadController::class, 'imageUploadPost' ])->name('image.upload.post');
 
-
-Route::get('videos', [ ImageUploadController::class, 'view' ])->name('image.upload');
-Route::post('image-upload', [ ImageUploadController::class, 'post' ])->name('image.upload.post');
